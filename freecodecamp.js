@@ -1,15 +1,16 @@
 function testStrict(val) {
-    if (val === 7) { // Change this line
-      return "Equal";
-    }
-    return "Not Equal";
+  if (val === 7) {
+    // Change this line
+    return "Equal";
   }
-  
-  testStrict(10);
+  return "Not Equal";
+}
 
+testStrict(10);
 
-  function compareEquality(a, b) {
-  if (a === b) { // Change this line
+function compareEquality(a, b) {
+  if (a === b) {
+    // Change this line
     return "Equal";
   }
   return "Not Equal";
@@ -17,9 +18,9 @@ function testStrict(val) {
 
 compareEquality(10, "10");
 
-
 function testNotEqual(val) {
-  if (val!=99) { // Change this line
+  if (val != 99) {
+    // Change this line
     return "Not Equal";
   }
   return "Equal";
@@ -28,7 +29,8 @@ function testNotEqual(val) {
 testNotEqual(10);
 
 function testStrictNotEqual(val) {
-  if (val !==17) { // Change this line
+  if (val !== 17) {
+    // Change this line
     return "Not Equal";
   }
   return "Equal";
@@ -37,11 +39,13 @@ function testStrictNotEqual(val) {
 testStrictNotEqual(10);
 
 function testGreaterThan(val) {
-  if (val > 100) {  // Change this line
+  if (val > 100) {
+    // Change this line
     return "Over 100";
   }
 
-  if (val > 10) {  // Change this line
+  if (val > 10) {
+    // Change this line
     return "Over 10";
   }
 
@@ -51,11 +55,13 @@ function testGreaterThan(val) {
 testGreaterThan(10);
 
 function testGreaterOrEqual(val) {
-  if (val>=20) {  // Change this line
+  if (val >= 20) {
+    // Change this line
     return "20 or Over";
   }
 
-  if (val>=10) {  // Change this line
+  if (val >= 10) {
+    // Change this line
     return "10 or Over";
   }
 
@@ -64,13 +70,14 @@ function testGreaterOrEqual(val) {
 
 testGreaterOrEqual(10);
 
-
 function testLessThan(val) {
-  if (val<25) {  // Change this line
+  if (val < 25) {
+    // Change this line
     return "Under 25";
   }
 
-  if (val<55) {  // Change this line
+  if (val < 55) {
+    // Change this line
     return "Under 55";
   }
 
@@ -78,3 +85,42 @@ function testLessThan(val) {
 }
 
 testLessThan(10);
+
+function testLessOrEqual(val) {
+  if (val <= 12) {
+    // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {
+    // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+
+
+function testLogicalAnd(val) {
+  if (val > 24 && val <= 50) {
+    return "Yes";
+  }
+
+  return "No";
+}
+
+testLogicalAnd(10);
+
+
+
+function testLogicalOr(val) {
+  if (val > 20 || val < 10) {
+    return "Outside";
+  }
+
+  return "Inside";
+}
+
+testLogicalOr(15);
